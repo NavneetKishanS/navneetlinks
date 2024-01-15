@@ -1,0 +1,144 @@
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.profileContainer {
+    margin-top: 50px; /* Reduced margin for better alignment */
+    text-align: center;
+}
+.container {
+    width: 100%;
+    height: 100%;
+  
+    background: #000000;
+    --gap: 5em;
+    --line: 1px;
+    --color: rgba(255, 255, 255, 0.2);
+  
+    background-image: linear-gradient(
+        -90deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      ),
+      linear-gradient(
+        0deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      );
+    background-size: var(--gap) var(--gap);
+  }
+  
+h1, p{
+    color: aliceblue;
+    text-align: center;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between cards */
+}
+
+
+.cards .gitHub,
+.cards .linkedIn,
+.cards .resume,
+.cards .certifications {
+    width: 90%; /* Adjust the width of the cards for better mobile visibility */
+    max-width: 400px; /* Max width to prevent overextending on larger screens */
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.cards .gitHub {
+    background-color: #333;
+    width: 450px;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px; /* Adds some padding */
+}
+
+.cards .gitHub .svgContainerGH {
+    margin-right: 10px; /* Adds space between the logo and text */
+    cursor: pointer; /* Shows pointer cursor on hover */
+    fill: white; /* Ensures SVG is visible */
+}
+
+.cards .gitHub .gh-info , .cards .linkedIn .li-info, .cards .resume .resume-info, .cards .certifications .cert-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1; /* Takes up remaining space horizontally */
+    text-align: left; /* Aligns text to the left */
+}
+
+.cards .gitHub p.GH_name , .cards .linkedIn p.LI_name, .cards .resume p.resume_name, .cards .certifications p.cert_name{
+    font-weight: bold;
+    font-size: 1.2em; /* Adjust the size as needed */
+    margin: 0;
+}
+
+.cards .gitHub p.GH_username, .cards .linkedIn p.LI_username , .cards .certifications p.LI_username , .fullName{
+    font-size: 0.8em; /* Adjust the size as needed */
+    margin: 5px 0 0; /* Minimal vertical spacing */
+}
+
+.cards .linkedIn .svgContainerLI {
+    margin-right: 10px; /* Adds space between the logo and text */
+    cursor: pointer; /* Shows pointer cursor on hover */
+    fill: rgb(69, 42, 192); /* Ensures SVG is visible */
+}
+.cards .resume , .cards .certifications, .cards .linkedIn {
+    width: 450px;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px; /* Adds some padding */
+}
+
+.cards .linkedIn {
+    background-color: #0077B5;
+}
+
+.cards .resume{
+    background-color: #dbb023;
+}
+
+.cards .certifications{
+    background-color: rgb(226, 80, 92);
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+    .cards {
+        padding: 0 10px;
+    }
+
+/*    .cards .gitHub p.GH_username,
+    .cards .linkedIn p.LI_username,
+    .cards .certifications p.LI_username,
+    .fullName {
+        display: none;
+    }*/
+    
+    .cards .gitHub,
+    .cards .linkedIn,
+    .cards .resume,
+    .cards .certifications {
+        width: 100%;
+    }
+}
