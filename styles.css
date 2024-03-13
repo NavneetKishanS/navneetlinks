@@ -91,9 +91,19 @@ h1, p{
     margin: 0;
 }
 
-.cards .gitHub p.GH_username, .cards .linkedIn p.LI_username , .cards .certifications p.LI_username , .fullName{
+.cards .gitHub p.GH_username, .cards .linkedIn p.LI_username , .cards .certifications p.LI_username{
     font-size: 0.8em; /* Adjust the size as needed */
     margin: 5px 0 0; /* Minimal vertical spacing */
+}
+
+.cards .fullName{
+    font-size: 1.0em; /* Adjust the size as needed */
+    margin: 5px 0 0; /* Minimal vertical spacing */
+}
+
+.cards .dev{
+    font-size: 0.8em; /* Adjust the size as needed */
+    margin: 3px 0 0; /* Minimal vertical spacing */
 }
 
 .cards .linkedIn .svgContainerLI {
