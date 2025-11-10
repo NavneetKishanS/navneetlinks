@@ -97,13 +97,13 @@ h1, p{
 }
 
 .cards .fullName{
-    font-size: 1.0em; /* Adjust the size as needed */
+    font-size: 25.0em; /* Adjust the size as needed */
     margin: 5px 0 0; /* Minimal vertical spacing */
 }
 
 .cards .dev{
     font-size: 0.8em; /* Adjust the size as needed */
-    margin: 3px 0 0; /* Minimal vertical spacing */
+    margin: 0.5px 0 0; /* Minimal vertical spacing */
 }
 
 .cards .linkedIn .svgContainerLI {
